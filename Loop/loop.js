@@ -10,6 +10,16 @@
 //   console.log(i);
 // }
 
-for (let i = 10; i <= 10000; i *= 10){ 
-  console.log(i);
+// for (let i = 10; i <= 10000; i *= 10){ 
+//   console.log(i);
+// }
+
+//! Perulangan dengan Array
+const fruits = ['berry', 'apple', 'guava', 'jackfruit'];
+
+for (i = 0; i < fruits.length; i++){
+  console.log(i, fruits[i]);
 }
+
+//! Nasted Loop (lanjut besok)
+
