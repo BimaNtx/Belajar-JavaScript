@@ -14,7 +14,7 @@ warna[3] = 'Jingga';
 
 console.log(warna);
 
-// nasted loop
+// nasted array
 
 const board = [
 	[null, null, 'O'],

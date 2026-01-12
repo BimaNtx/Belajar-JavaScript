@@ -15,11 +15,19 @@
 // }
 
 //! Perulangan dengan Array
-const fruits = ['berry', 'apple', 'guava', 'jackfruit'];
+// const fruits = ['berry', 'apple', 'guava', 'jackfruit'];
 
-for (i = 0; i < fruits.length; i++){
-  console.log(i, fruits[i]);
+// for (i = 0; i < fruits.length; i++){
+//   console.log(i, fruits[i]);
+// }
+
+//! Nasted Loop 
+
+let str = "BIM"
+
+for (let i = 0; i <= 4; i++){
+  console.log("outer:", i)
+  for (let j = 0; j < str.length; j++)
+    console.log(" inner:", str[j])
 }
-
-//! Nasted Loop (lanjut besok)
-
+// ! lanjut besok, capek habis kegiatan
