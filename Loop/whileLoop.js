@@ -26,3 +26,17 @@
 //   console.log(i);
 //   if (i === 100) break;
 // }
+let stok = 3;
+
+while (stok > 0) {
+  console.log("Masih ready.. sisa: " + stok);
+  stok--;
+}
+console.log("Stok habis");
+
+let angakAcak = 0;
+while (angakAcak !== 7) {
+  angakAcak = Math.floor(Math.random() * 10) +1;
+  console.log("Mendapatkan Angka: " + angakAcak);
+}
+console.log("Angka 7 terdeteksi.. ketahuan")
