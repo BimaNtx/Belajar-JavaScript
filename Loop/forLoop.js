@@ -32,16 +32,21 @@
 // }
 
 //! Nasted array dengan nasted loop
-const studentRow = [
-  ["Olivia", "Joan", "Mikey", "Sandra"],
-  ["Nadia", "Shyla", "Andre", "Damn"],
-  ["Laura", "Dasha", "Law", "Neo"],
-];
+// const studentRow = [
+//   ["Olivia", "Joan", "Mikey", "Sandra"],
+//   ["Nadia", "Shyla", "Andre", "Damn"],
+//   ["Laura", "Dasha", "Law", "Neo"],
+// ];
 
-for (let i = 0; i < studentRow.length; i++) {
-  const row = studentRow[i];
-  console.log(`Seat Row #${i + 1}`);
-  for (let j = 0; j < row.length; j++){
-    console.log(`  ${row[j]}`);
-  }
+// for (let i = 0; i < studentRow.length; i++) {
+//   const row = studentRow[i];
+//   console.log(`Seat Row #${i + 1}`);
+//   for (let j = 0; j < row.length; j++){
+//     console.log(`  ${row[j]}`);
+//   }
+// }
+
+const daftarBahasa = ["Javascript", "Python", "PHP", "Dart"];
+for (let i = 0; i < daftarBahasa.length;i++) {
+  console.log("Saya belajar: " + daftarBahasa[i])
 }
