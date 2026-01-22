@@ -46,7 +46,28 @@
 //   }
 // }
 
-const daftarBahasa = ["Javascript", "Python", "PHP", "Dart"];
-for (let i = 0; i < daftarBahasa.length;i++) {
-  console.log("Saya belajar: " + daftarBahasa[i])
+// const daftarBahasa = ["Javascript", "Python", "PHP", "Dart"];
+// for (let i = 0; i < daftarBahasa.length;i++) {
+//   console.log("Saya belajar: " + daftarBahasa[i])
+// }
+
+//! for + if-else
+  const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+for (let i = 0; i< angka.length; i++){
+  if (angka[i] % 2 === 0){
+    console.log("Ini adalah angka genap");
+  } else {
+    console.log("Ini angka ganjil")
+  }
+}
+
+const fruits = ['Berry', "apple", 'guava', 'watermelon'];
+const cari = 'guava';
+
+for (let i = 0; i < fruits.length; i++) {
+  if (fruits[i] === cari){
+    console.log('ketemu ' + cari + ' ada di index ke-' + i);
+    break;
+  }
 }
