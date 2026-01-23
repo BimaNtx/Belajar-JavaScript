@@ -26,17 +26,33 @@
 //   console.log(i);
 //   if (i === 100) break;
 // }
-let stok = 3;
+// let stok = 3;
 
-while (stok > 0) {
-  console.log("Masih ready.. sisa: " + stok);
-  stok--;
-}
-console.log("Stok habis");
+// while (stok > 0) {
+//   console.log("Masih ready.. sisa: " + stok);
+//   stok--;
+// }
+// console.log("Stok habis");
 
-let angakAcak = 0;
-while (angakAcak !== 7) {
-  angakAcak = Math.floor(Math.random() * 10) +1;
-  console.log("Mendapatkan Angka: " + angakAcak);
+// let angakAcak = 0;
+// while (angakAcak !== 7) {
+//   angakAcak = Math.floor(Math.random() * 10) +1;
+//   console.log("Mendapatkan Angka: " + angakAcak);
+// }
+// console.log("Angka 7 terdeteksi.. ketahuan")
+
+
+//! simulasi kasir
+
+let totalBelanja = 150000;
+let saldoUser = 200000;
+let transaksiSelesai = false;
+
+while (!transaksiSelesai) {
+  if (saldoUser >= totalBelanja) {
+    console.log("Transaksi Berhasil");
+    transaksiSelesai = true;
+  } else {
+    console.log("Transaksi gagal! saldo anda kurang")
+  }
 }
-console.log("Angka 7 terdeteksi.. ketahuan")
