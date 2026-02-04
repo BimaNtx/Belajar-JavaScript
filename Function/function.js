@@ -32,3 +32,30 @@ function hitung (a, b) {
 
 let hasil = hitung('adalah ', 'bima');
 console.log(hasil);
+
+//! Scope: Visibilitas Variabel
+
+let linux = 'Arch';
+
+function easyLinux() {
+  let linux = 'Mint';
+  console.log(linux); //output: mint
+}
+easyLinux();
+console.log(linux);  //output:Arch
+
+//! Blocked Scope Variabel
+
+let total = 10;
+if (total > 7) {
+  let satuan = 10;
+  console.log(satuan);
+}
+// console.log(satuan); //tidak bisa mengambil variabel jika tidak didalam scopenya
+// bisa jika menggunakan var karena var tidak memiliki blocked scope dan tidak disarankan juga menggunakan var
+
+for (let index = 0; index < 10; index++) {
+  const indexNum = index;
+  console.log(indexNum);
+}
+console.log(indexNum);
