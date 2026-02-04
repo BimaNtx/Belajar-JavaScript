@@ -20,3 +20,15 @@ function jumlahkan(a, b) {
 }
 
 jumlahkan(10, 1000) //jika memasukkan 3 argument, yang dihitung hanya sesuai dengan jumlah parameter
+
+//! return
+//mengakhiri proses didalam fungsi dan akan memberikan nilai yang didefinikan saat fungsi dipanggil
+function hitung (a, b) {
+  if (a !== 'adalah ' || b !== 'bima') {
+    return 'salah woi';
+  }
+  return a + b;
+}
+
+let hasil = hitung('adalah ', 'bima');
+console.log(hasil);
