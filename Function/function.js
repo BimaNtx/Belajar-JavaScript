@@ -96,3 +96,42 @@ const menyapaBalik = function() {
 };
 
 sapaDia("neo", menyapaBalik);
+
+// method
+
+const keyboard = {
+  tipe: "Mekanik",
+  nyalakanLampu: function() {
+    console.log("Lampu berhasil menyala");
+  }
+};
+
+keyboard.nyalakanLampu();
+
+// This
+
+const user = {
+  username: "NeoNeo",
+  name: "BimaAnanta",
+  sapa: function() {
+    console.log(`Selamat datang, ${this.name}`); 
+  }
+}
+
+user.sapa();
+
+
+// Try and catch 
+function prosesPembayaran(status) {
+  try {
+    if (status === "gagal") {
+      throw "Saldo tidak cukup!";
+    }
+    console.log("Pembayaran berhasil");
+  }
+  catch(error) {
+    console.log("Terjadi kesalahan: " + error)
+  }
+}
+
+prosesPembayaran("gagal");
