@@ -1,9 +1,11 @@
-// forEach Method 
+// !1. forEach Method 
  
 /*
+
 array.forEach(function(item, index, array) {
   // Kode yang akan dijalankan
 });
+
 */
 
 const peserta = ['Bima', 'Ananta', 'itu'];
@@ -22,10 +24,13 @@ angka.forEach(function(nilai) {
 
 console.log(total);
 
+//  !2. map method
 /*
+
 const arrayBaru = arrayLama.map(function(item, index) {
 return //hasil transformasi
 })
+
 */
 
 const nama = ['Bima', 'Ananta', 'di Dini', 'Hari'];
@@ -48,3 +53,37 @@ const daftarNamaProduk = produk.map(function(p) {
 });
 
 console.log(daftarNamaProduk);
+
+// !3. Arror function
+
+// contoh fungsi biasa
+const panggil = function(nama) {
+    return `Halo ${nama}`;
+};
+
+// menggunakan arrow function
+const sapa = (nama) => {
+    return `Halo ${nama}`;
+};
+
+// 4. return implisit
+
+// tanpa
+const kaliDua = (n) => {
+    return n * 2;
+}
+
+// mengggunakan return implisit 
+const kaliTiga = (n) => n * 3;
+
+
+// contoh arrow function dan return implisit
+
+const hewanPeliharaan = ['Kucing', 'Anjing', 'Ayam', 'Kambing']
+const peliha2raanKapital = hewanPeliharaan.map(nama => nama.toUpperCase());
+console.log(peliharaanKapital);
+
+const hargaMentah = [10000, 15000, 25000];
+const hargaRupiah = hargaMentah.map(harga => harga.toLocaleString('id-ID'));
+console.log(hargaRupiah);
+
