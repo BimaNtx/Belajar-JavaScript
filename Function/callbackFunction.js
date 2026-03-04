@@ -80,10 +80,39 @@ const kaliTiga = (n) => n * 3;
 // contoh arrow function dan return implisit
 
 const hewanPeliharaan = ['Kucing', 'Anjing', 'Ayam', 'Kambing']
-const peliha2raanKapital = hewanPeliharaan.map(nama => nama.toUpperCase());
+const peliharaanKapital = hewanPeliharaan.map(nama => nama.toUpperCase());
 console.log(peliharaanKapital);
 
 const hargaMentah = [10000, 15000, 25000];
 const hargaRupiah = hargaMentah.map(harga => harga.toLocaleString('id-ID'));
 console.log(hargaRupiah);
+
+// -------------------------------------------------------------------------
+
+// !5. SetTimeout & SetInterval
+
+// A. SetTimeout | setTimeout(callback, delayInMilisecond)
+
+console.log("Sedang Memproses Pembayaran...");
+
+setTimeout(() => {
+    console.log("Pembayaran Berhasil, Mencetak Struk..");
+}, 2000);
+
+// B. Setinterval | setInterval(callback, delayInMilisecond)
+
+// setInterval (() => {
+//     console.log("Memeriksa paket jaringan... Aman");
+// }, 3000);
+
+const intervalID = setInterval(() => {
+    console.log("Running...");
+}, 1000);
+
+setTimeout(() => {
+    clearInterval(intervalID);
+    console.log("Berhasil dihentikan.");
+}, 5000);
+
+let detik = 5;
 
