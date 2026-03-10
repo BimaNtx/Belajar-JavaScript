@@ -130,3 +130,28 @@ let timer = setInterval(() => {
     detik--;
 }, 1000);
 
+// ! Filter method
+
+const loginAttempts = [
+    { ip: '192.168.1.1', count:2 },
+    { ip: '10.0.0.5', count: 20},
+    { ip: '172.16.0.1', count: 1},
+    { ip: '192.168.1.45', count: 34}
+];
+
+const suspiciousIPs = loginAttempts.filter(attempt => attempt.count > 10);
+
+console.log(suspiciousIPs);
+
+// ! every & some method
+// every, mengecek apakah semua?
+
+const nilaiRapor = [60, 90, 80, 74,40];
+
+const isLulus = nilaiRapor.every(nilai => nilai >= 75);
+console.log(isLulus);
+
+// some, apakah ada salah satunya?
+const logSistem = ['Aman', 'Aman', 'Ancaman', 'Aman'];
+const adaAncaman = logSistem.some(log => log === 'Ancaman');
+console.log(adaAncaman);
