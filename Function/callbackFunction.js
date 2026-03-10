@@ -114,5 +114,19 @@ setTimeout(() => {
     console.log("Berhasil dihentikan.");
 }, 5000);
 
+setInterval(() => {
+    console.log("Hello");
+}, 1000);
+
 let detik = 5;
+
+let timer = setInterval(() => {
+    console.log(`sisa waktu anda: ${detik}`); 
+    
+    if(detik === 0) {
+        console.log("Waktu Habis");
+        clearInterval(timer);
+    }
+    detik--;
+}, 1000);
 
